@@ -1,11 +1,79 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mon site perso</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Bienvenue sur mon site 👋</h1>
-  <p>Ceci est mon premier site web.</p>
+
+  <!-- NAV -->
+  <nav>
+    <div class="logo">👋 MonSite</div>
+    <ul>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1 class="fade-in">Je crée des projets web modernes</h1>
+    <p class="fade-in delay">
+      Développeur en apprentissage • Créatif • Curieux
+    </p>
+    <a href="#projects" class="btn fade-in delay2">Voir mes projets</a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section reveal">
+    <h2>À propos</h2>
+    <p>
+      Je suis passionné par le développement web et la création de projets utiles et stylés.
+      J’aime apprendre, expérimenter et progresser chaque jour.
+    </p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section reveal">
+    <h2>Projets</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>🌐 Site perso</h3>
+        <p>Mon premier site web moderne avec animations.</p>
+      </div>
+      <div class="card">
+        <h3>🤖 Bot Discord</h3>
+        <p>Un bot utile pour gérer et animer un serveur.</p>
+      </div>
+      <div class="card">
+        <h3>🎮 Mini-jeu</h3>
+        <p>Un petit jeu fun en JavaScript.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section reveal">
+    <h2>Contact</h2>
+    <p>Tu peux me retrouver ici :</p>
+    <div class="links">
+      <a href="#">GitHub</a>
+      <a href="#">Discord</a>
+      <a href="#">Email</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 • Mon site perso</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
